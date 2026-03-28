@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RPG Quest To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎮 RPG Quest To-Do</h1>
+    <p class="subtitle">Complete missions. Level up. Become a legend.</p>
+
+    <div class="stats">
+      <p>Level: <span id="level">1</span></p>
+      <p>Title: <span id="title">Beginner</span></p>
+      <p>XP: <span id="xp">0</span></p>
+      <p>🔥 Streak: <span id="streak">0</span></p>
+    </div>
+
+    <div class="xp-bar">
+      <div id="xp-fill"></div>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter a quest...">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+    
+    <p>💰 Coins: <span id="coins">0</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
